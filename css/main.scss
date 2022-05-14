@@ -1,0 +1,137 @@
+:root {
+    --fs-200: 0.5rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.5rem;
+    --fs-600: 2.25rem;
+    --fs-700: 3rem;
+    --primary-color: #0f1e30;
+    --secondary-color: #3ea6bd;
+    --tertiary-color:  #3490bf;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0; 
+    background: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    z-index:99;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 8em;
+        text-align: center;
+        a {
+            text-decoration: none;
+            font-size: var(--fs-500);
+            color: white;
+            padding: .75em 2em;
+            display: block;
+            &:hover {
+                background: rgb(235, 235, 235);
+                color: var(--primary-color)
+            }
+        }
+    }
+
+    .close {
+        float: right;
+        margin: 0.7em 1.3em;
+        width: 2.5em;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    .menu {
+        width: 2.5em;
+        position: absolute;
+        top: .7em;
+        right:1.3em;
+        cursor: pointer;
+    }
+}
+
+.nospace {
+    font-size: 0;
+    width: 100vw;
+}
+
+
+
+.categories {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 7em);
+    grid-template-rows: repeat(2, 7em);
+    gap: 2em;
+}
+main {
+    min-height: 100vh;
+}
+.categories-snippet {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: .3em;
+    text-align: center;
+    .snippet__icon {
+        justify-self: center;
+        width: 5em;
+        background: #3ea6bd;
+        clip-path: circle(50% at 50% 50%);
+        padding: 1em;
+    }
+    .snippet__name {
+        display: block;
+    }
+    p {
+        font-size: var(--fs-400);
+    }
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+footer {
+    .container {
+        text-align: center;
+        .partner {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            place-items: center;
+            img {
+                width: 7em;
+                text-shadow: #f2f2f2 1px 1px 2px;
+            };
+        }
+        .nospace {
+            position: absolute;
+            bottom: inherit;
+            right: inherit;
+            z-index: -100;
+        }
+    }
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+

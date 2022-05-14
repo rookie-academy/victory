@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <script src="/js/carousel.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="/assets/close.svg" alt="close nav" class="close">
+                <ul>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <img src="/assets/open.svg" alt="open nav" class="menu">
+            <div class="nospace">
+                <img src="/assets/top-one.svg" alt="background top one" class="top-one-img">
+                <img src="/assets/top-two.svg" alt="backgound top two" class="top-two-img">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div aria-label="Featured-Programmes">
+                    <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                        <img src="/photos/slide-01.JPG" alt="Image #1">
+                        </li>
+                        <li class="slide">
+                        <img src="/photos/slide-02.JPG" alt="Image #2">
+                        </li>
+                        <li class="slide">
+                        <img src="/photos/slide-03.JPG" alt="Image #3">
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <ul class="categories">
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-1.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">感覺統合</p>
+                    </li>
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-2.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">瑜伽教室</p>
+                    </li>
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-3.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">運動體適能</p>
+                    </li>
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-4.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">中文讀寫</p>
+                    </li>
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-5.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">英文讀寫</p>
+                    </li>
+                    <li class="categories-snippet">
+                        <a href="#"><img src="/assets/icon-6.png" alt="sensory training" class="snippet__icon"></a>
+                        <p class="snippet__name">數理邏輯思維</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <ul class="blog-featured">
+                    <li class="blog-snippet">
+                        <img src="//unsplash.it/510" alt="" class="snippet__image">
+                        <h3 class="snippet__title">Title1</h3>
+                        <p class="snippet__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, in!</p>
+                        <p class="snippet__meta">Author: David Date: 22/10/2022</p>
+                        <button type="button" onclick="window.open('#')" class="snippet__button">continue reading</button>
+                    </li>
+                    <li class="blog-snippet">
+                        <img src="//unsplash.it/510" alt="" class="snippet__image">
+                        <h3 class="snippet__title">Title2</h3>
+                        <p class="snippet__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro non harum dolor?</p>
+                        <p class="snippet__meta">Author: David Date: 21/10/2022</p>
+                        <button type="button" onclick="window.open('#')" class="snippet__button">continue reading</button>
+                    </li>
+                    <li class="blog-snippet">
+                        <img src="//unsplash.it/510" alt="" class="snippet__image">
+                        <h3 class="snippet__title">Title3</h3>
+                        <p class="snippet__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, illo?</p>
+                        <p class="snippet__meta">Author: David Date: 20/10/2022</p>
+                        <button type="button" onclick="window.open('#')" class="snippet__button">continue reading</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="nospace">
+                <img src="/assets/bottom-two.svg" alt="bottom two image" class="bottom-two">
+                <img src="/assets/bottom-one.svg" alt="bottom one image" class="bottom-one">
+            </div>
+            <div class="partner">
+                <span class="copyright">版權所有 © {% year %} </span>
+                <div class="company-logo">
+                    <img src="/assets/vka.png" alt="victory kidult academy" class="snippet__logo1">
+                    <img src="/assets/rookieacademy.png" alt="rookie academy" class="snippet__logo2">
+                    <img src="/assets/catyoga.png" alt="cat yoga studio" class="snippet__logo3">
+                </div>
+                <p>服務團體．合作夥伴</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        }) 
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        }) 
+    </script>
+</body>
+</html>
